@@ -1,0 +1,44 @@
+<header>
+    <div class="w-logo">
+        <a href="#">Weather Forecasting</a>
+    </div>
+</header>
+<main ng-controller="forecastCtrl" class="">
+    <section class="w-search-tile w-container-70">
+        <div>
+            <h2>24 hours weather Forecasting</h2>
+            <input type="text" id="searchCity" ng-model="searchCityName"/>
+            <input type="button" value="Search" ng-click="callSearchCity()" />
+        </div>
+    </section>
+
+    <section class="w-search-results-tile w-container-80">
+
+        <table class="w-table-container ">
+            <thead>
+                <tr>
+                    <th>City</th>
+                    <th>12 AM</th>
+                    <th>6 AM</th>
+                    <th>12 PM</th>
+                    <th>6PM</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="c in cityList | filter:getCityDetails()">
+                    <td><span>{{c.name}}</span><span> : {{c.country}}</span></td>
+                    <td> {{c.timeAt00}} </td>
+                    <td> {{c.timeAt06}} </td>
+                    <td> {{c.timeAt18}} </td>
+                    <td> {{c.timeAt24}} </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </section>
+
+
+</main>
+<footer>
+    <div class="w-footer-text">@copyrights 2000</div>
+</footer>

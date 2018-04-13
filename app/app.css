@@ -1,0 +1,71 @@
+/* app css stylesheet */
+
+body{
+  margin: 0px;
+  padding: 0px;
+  font-size: 1em;
+  font-family: sans-serif;
+
+}
+
+header, footer, main, img{
+  width:100%;
+}
+header{
+  position: relative;
+  height: 90px;
+}
+header a{
+  text-decoration: none;
+}
+footer{
+
+}
+
+
+ul li{
+  list-style: none;
+  text-decoration: none;
+  padding: 0px;
+}
+
+.w-logo{
+  width: 30%;
+  position: absolute;
+  top: 30%;
+  left: 40%;
+}
+
+.w-container-100{
+  width:99%;
+}
+
+.w-container-95{
+  width: 95%
+}
+.w-container-80{
+  width: 80%;
+  margin:0 auto;
+}
+.w-container-70{
+  width: 70%;
+  margin:0 auto;
+}
+.w-search-results-tile{
+  margin-top:20px;
+  height: 500px;
+  overflow-y: scroll;
+}
+.w-search-tile{
+  margin-top:20px;
+}
+.w-search-tile div{
+  width:100%;
+}
+table.w-table-container{
+  width:99%;
+}
+table.w-table-container td{
+  padding: 15px;
+  border:1px solid #1c94c4;
+}
