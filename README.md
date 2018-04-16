@@ -7,3 +7,7 @@ npm install
 
 # runtest cases
  npm test
+
+ # to build the js files
+
+ gulp build
